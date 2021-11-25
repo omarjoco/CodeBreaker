@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Breaker</title>
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+    <div class="App">
+
+        <div class="Encabezado">
+            <Span>Code Breaker </Span>
+        </div>
+
+        <div class="Instruciones">
+            <span>Instruciones:</span>
+            <span>1. El numero que intentaras adivinar no contiene digitos repetidos</span>
+            <span>2. Si un numero que ingresaste forma parte del numero a descubir
+                pero no esta en la misma posicion obtendras un " - " (guion)
+            </span>
+            <span>3. Si un numero que ingresaste forma parte del numero a descubrir
+                y este se encuentra en la misma posicion obtendras un " * " (asterisco)
+            </span>
+        </div>
+    
+        <div class="Entrada">
+            <div class="Respuesta">
+                <span>Numero Generado</span>
+                <span id="numero-1" class="Numero">*</span>
+                <span id="numero-2" class="Numero">*</span>
+                <span id="numero-3" class="Numero">*</span>
+                <span id="numero-4" class="Numero">*</span>
+                <input type="button" value="Generar Numero" id="btnGenerarNumero">
+                <input type="button" value="consultar" id="consultar">
+            </div>
+
+            <div class="Form">
+                <input placeholder="Adivina El Numero" id="numeroUSuario">
+                <input type="button" value="Comprobar" id="btnComprobar">
+            </div>
+
+        </div>
+
+        <div class="Felicitaciones invisible" id="mensajeFelicitaciones">
+            <span>Felicidades Adivinaste El Numero</span>
+        </div>
+        
+    
+        <div class="Mensajes" id="mensajes">
+            <div class="pista">
+                <span>Intento</span>
+                <span class="Espaciado">Entrada</span>
+                <span>>>>></span>
+                <span>Retroalimentacion</span>
+            </div>
+            <div id="listaMensajes"></div>
+        </div>
+
+        
+        
+
+    </div>
+
+    <script src="/CodeBreaker.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+
+.App{
+    display: grid;
+    grid-template-columns: auto;
+    border: 1px solid black;
+    margin: auto;
+    box-shadow: 0 5px 16px 0 rgba(32, 143, 218, 0.555), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 800px;
+}
+.Encabezado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Encabezado span
+{
+    margin: 25px;
+    font-size: 30px;
+}
+
+.Instruciones{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Instruciones span{
+
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+}
+
+.Entrada{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    margin: 20px;
+
+}
+
+.Entrada .Respuesta{
+
+}
+
+.Entrada .Numero{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 2px;
+}
+
+.Entrada input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.Mensajes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 2px solid black;
+
+}
+
+.Mensajes .pista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    border: 1px solid black;
+    min-width: 300px;
+    margin: 25px 10px 10px 10px;
+    padding: 5px;
+}
+
+.Mensajes .pista span{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 4px;
+    border-radius: 3px;
+    
+}
+
+.Mensajes .pista .Espaciado{
+    letter-spacing: 10px;
+}
+
+.visible{
+    display: flex;
+}
+.invisible{
+    display: none;
+}
+
+.Felicitaciones{
+    
+    justify-content: center;
+}
+.Felicitaciones span{
+    margin: 10px 0px;
+    border: 1px solid blue;
+    padding: 15px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+}
+
